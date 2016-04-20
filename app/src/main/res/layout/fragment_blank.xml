@@ -1,9 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
+    android:orientation="horizontal"
     tools:context="com.example.ahmed.movieapp.BlankFragment">
 
 
@@ -11,9 +10,11 @@
         android:id="@+id/grad_view_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="3">
+        android:layout_margin="0dp"
+        android:numColumns="3"
+        android:padding="0dp">
 
     </GridView>
 
 
-</LinearLayout>
+</FrameLayout>

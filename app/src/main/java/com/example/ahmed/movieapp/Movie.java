@@ -7,21 +7,22 @@ public class Movie {
 
 
     private String poster_path;
-    private boolean adult;
+    private String adult;
     private String overview;
     private String release_date;
-    private int id;
+    private String id;
     private String original_title;
     private String original_language;
     private String title;
     private String popularity;
-    private int vote_count ;
-    private boolean video;
+    private String vote_count;
+    private String video;
     private String vote_average;
+    private String backdrop_path;
 
-    public Movie(String poster_path, boolean adult, String overview, String release_date,
-                 int id, String original_title, String original_language, String title,
-                 String popularity, int vote_count, boolean video, String vote_average) {
+    public Movie(String poster_path, String adult, String overview, String release_date,
+                 String id, String original_title, String original_language, String title,
+                 String popularity, String vote_count, String video, String vote_average) {
         this.poster_path = poster_path;
         this.adult = adult;
         this.overview = overview;
@@ -39,6 +40,14 @@ public class Movie {
     public Movie() {
     }
 
+    public String getBackdrop_path() {
+        return backdrop_path;
+    }
+
+    public void setBackdrop_path(String backdrop_path) {
+        this.backdrop_path = backdrop_path;
+    }
+
     public String getPoster_path() {
         return poster_path;
     }
@@ -47,11 +56,11 @@ public class Movie {
         this.poster_path = poster_path;
     }
 
-    public boolean isAdult() {
+    public String getAdult() {
         return adult;
     }
 
-    public void setAdult(boolean adult) {
+    public void setAdult(String adult) {
         this.adult = adult;
     }
 
@@ -71,11 +80,11 @@ public class Movie {
         this.release_date = release_date;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -111,19 +120,19 @@ public class Movie {
         this.popularity = popularity;
     }
 
-    public int getVote_count() {
+    public String getVote_count() {
         return vote_count;
     }
 
-    public void setVote_count(int vote_count) {
+    public void setVote_count(String vote_count) {
         this.vote_count = vote_count;
     }
 
-    public boolean isVideo() {
+    public String getVideo() {
         return video;
     }
 
-    public void setVideo(boolean video) {
+    public void setVideo(String video) {
         this.video = video;
     }
 
